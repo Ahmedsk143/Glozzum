@@ -1,0 +1,13 @@
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center mb-3" *ngFor="let feature of features">
+                <i class="fas fa-cogs" *ngIf="feature =='Turning Gears'"></i>
+                <i class="fas fa-cloud" *ngIf="feature =='Sending Data'"></i>
+                <i class="fas fa-dollar-sign" *ngIf="feature =='Making Money'"></i>
+                <h3>{{feature}}</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+            </div>
+        </div>
+    </div>
+</section>

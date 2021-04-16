@@ -1,0 +1,27 @@
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let blog of blogs">
+                <div class="card">
+                    <img [src]="blog.src" alt="" class="img-fluid card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Blog Post {{blog.title}}</h4>
+                        <small class="text-muted">Written by {{blog.author}}</small>
+                        <hr>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis,
+                            sequi
+                            excepturi,
+                            quisquam, dignissimos
+                            molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit. Magni vel
+                            iusto
+                            mollitia
+                            exercitationem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

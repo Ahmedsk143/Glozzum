@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a routerLinl="/" class="navbar-brand">Glozzum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" (click)="show=!show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="nav" [ngClass]="{'show':show}">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                    <a routerLink="/" class="nav-link" (click)="scrollToHome()">Home</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="about" class="nav-link" (click)="scrollToAbout()">About</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="services" class="nav-link" (click)="scrollToServices()">Services</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="blog" class="nav-link" (click)="scrollToBlog()">Blog</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="contact" class="nav-link" (click)="scrollToContact()">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>

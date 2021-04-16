@@ -1,0 +1,15 @@
+section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.726)),
+    url("../../../assets/img/media.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(202, 197, 197);
+  a {
+    cursor: pointer;
+    color: #a0a0a0;
+    transition: all 0.3s;
+    &:hover {
+      color: #ff0000;
+    }
+  }
+}

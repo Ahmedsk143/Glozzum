@@ -1,0 +1,43 @@
+<section class="py-5 bg-dark text-white">
+    <div class="container">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <accordion class="text-dark" [isAnimated]="true" [closeOthers]="true">
+                    <accordion-group *ngFor="let title of leftAccorions">
+                        <h5 accordion-heading>
+                            <i class="fas fa-caret-down mr-2"></i>
+                            Question {{title}}
+                        </h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea officiis distinctio
+                            exercitationem dolor minus
+                            placeat amet commodi, ab a perspiciatis officia nobis reiciendis numquam totam repudiandae
+                            molestias nulla, quod
+                            voluptatibus modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima, deserunt.
+                        </p>
+                    </accordion-group>
+                </accordion>
+            </div>
+            <div class="col-md-6">
+                <accordion class="text-dark" [isAnimated]="true" [closeOthers]="true">
+                    <accordion-group *ngFor="let title of rightAccorions">
+                        <h5 accordion-heading>
+                            <i class="fas fa-caret-down mr-2"></i>
+                            Question {{title}}
+                        </h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea officiis distinctio
+                            exercitationem dolor minus
+                            placeat amet commodi, ab a perspiciatis officia nobis reiciendis numquam totam repudiandae
+                            molestias nulla, quod
+                            voluptatibus modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima, deserunt.
+                        </p>
+                    </accordion-group>
+                </accordion>
+            </div>
+
+        </div>
+    </div>
+</section>
